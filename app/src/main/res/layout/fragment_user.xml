@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cky.icomic.View.UserFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:background="@color/colorPrimary">
+
+       <com.cky.icomic.widget.RoundView
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_above="@+id/textView"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="10dp" />
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="25dp"
+           android:textColor="@android:color/white"
+           android:textSize="20sp"
+           android:text="煎鱼" />
+   </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#2222"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:text="浏览记录" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background_normal"
+        android:text="漫画下载" />
+
+</LinearLayout>

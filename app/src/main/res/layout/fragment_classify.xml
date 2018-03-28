@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.cky.icomic.View.ClassifyFragment">
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="{fa-th-large}漫画分类" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#3333"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:onClick="onClick"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="#5555"
+                android:gravity="center"
+                android:text="少年漫画"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/c2"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:onClick="onClick"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/qn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="#5555"
+                android:gravity="center"
+                android:text="青年漫画"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:onClick="onClick"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sv" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="#5555"
+                android:gravity="center"
+                android:text="少女漫画"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/c4"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:onClick="onClick"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/am" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:background="#5555"
+                android:gravity="center"
+                android:text="耽美漫画"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

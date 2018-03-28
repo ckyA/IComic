@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<FrameLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="600dp">
+
+
+    <uk.co.senab.photoview.PhotoView
+        android:id="@+id/pv"
+        android:src="@drawable/jiabaili"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="#666"
+        android:textColor="@android:color/white"
+        android:text="1"/>
+</FrameLayout>
+
+</LinearLayout>
